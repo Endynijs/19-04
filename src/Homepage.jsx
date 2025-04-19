@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "./components/ui/button";
 import { Input } from "./components/ui/input";
@@ -55,46 +56,11 @@ export default function Homepage() {
 
       <section id="over" className="bg-[#0e141e] text-white py-20 px-4">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-          <img src="/office-interior.jpg" alt="Kantoorinterieur" className="rounded-xl shadow" />
+          <img src="/images/installatie-endy.jpg" alt="Installatie Endy" className="rounded-xl shadow" />
           <div>
             <h2 className="text-3xl font-bold mb-4">Over ons</h2>
             <p className="text-white/80 text-lg">Van advies tot realisatie: wij bieden innovatieve oplossingen voor slimmer en duurzamer gebouwbeheer.</p>
           </div>
-        </div>
-      </section>
-
-      <section id="contact" className="bg-white py-20 px-4">
-        <div className="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow">
-          <h2 className="text-2xl font-bold mb-4 text-black">Contact</h2>
-          <p className="mb-6 text-gray-700">Neem gerust contact met ons op voor meer informatie of een adviesgesprek.</p>
-          <form className="grid gap-4">
-            <Input name="naam" placeholder="Naam" className="bg-gray-100 text-black" />
-            <Input type="email" name="email" placeholder="E-mailadres" className="bg-gray-100 text-black" />
-            <textarea name="bericht" placeholder="Bericht" className="bg-gray-100 text-black p-2 rounded-md" rows="4"></textarea>
-            <Button className="bg-[#5fd68b] hover:bg-[#4cc27a] text-black rounded-xl">Verzenden</Button>
-          </form>
-        </div>
-      </section>
-
-      <section className="bg-[#f9fafb] text-black py-20 px-4">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-start">
-          <div>
-            <h2 className="text-2xl font-bold mb-4">Onze gegevens</h2>
-            <p className="mb-2">📍 <strong>Adres:</strong> Driekruisenstraat 74, 3700 Tongeren-Borgloon</p>
-            <p className="mb-2">📞 <strong>Telefoon:</strong> +32 492 31 98 78</p>
-            <p className="mb-2">✉️ <strong>E-mail:</strong> endy@nijs.tech</p>
-            <p className="mt-4 text-sm text-gray-600">Wij helpen je graag verder met je automatiseringsproject.</p>
-          </div>
-          
-<iframe
-  title="Nijs locatie"
-  className="w-full h-64 rounded-xl shadow"
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.2108742648966!2d5.3428128!3d50.8057409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f0c759ff0a33%3A0x148df257f0f10a74!2sDriekruisenstraat%2074%2C%203700%20Borgloon!5e0!3m2!1snl!2sbe!4v1713288677333!5m2!1snl!2sbe"
-  allowFullScreen=""
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-/>
-
         </div>
       </section>
     </div>
