@@ -1,16 +1,68 @@
 
 import React from "react";
+import { Button } from "./components/ui/button";
+import { Input } from "./components/ui/input";
+import { Building2, Zap } from "lucide-react";
 
 export default function Homepage() {
   return (
-    <div className="bg-gray-900 min-h-screen text-white p-6">
-      <h1 className="text-3xl font-bold mb-6">🔧 Navigatie Test</h1>
-      <nav className="bg-red-600 p-4 rounded-xl flex flex-col gap-4 text-center">
-        <a href="#diensten" className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-bold">Diensten</a>
-        <a href="#over" className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-bold">Over ons</a>
-        <a href="#projecten" className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-bold">Projecten</a>
-        <a href="#contact" className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-bold">Contact</a>
-      </nav>
+    <div className="bg-[#0e141e] text-white font-sans">
+      <header className="flex justify-between items-center p-6 max-w-7xl mx-auto">
+        <div className="text-xl font-bold">
+          <img src="/nijs-logo-cropped.png" alt="Nijs Logo" className="h-20" />
+        </div>
+        <nav className="space-x-6 text-sm text-white/80">
+          <a href="#diensten">Diensten</a>
+          <a href="#over">Over ons</a>
+          <a href="/realisaties">Realisaties</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section className="relative bg-cover bg-center h-[80vh] flex items-center justify-center text-center px-4" style={{ backgroundImage: "url('/hero-nijs.jpg')" }}>
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="relative z-10 max-w-2xl">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">Slimme oplossingen<br />voor slimme gebouwen</h1>
+          <a href="#contact">
+            <Button className="mt-4 bg-[#5fd68b] hover:bg-[#4cc27a] text-black text-lg px-6 py-3 rounded-xl">Neem contact op</Button>
+          </a>
+        </div>
+      </section>
+
+      <section id="diensten" className="bg-white text-black py-20 px-4">
+        <div className="max-w-7xl mx-auto text-center mb-10">
+          <h2 className="text-3xl font-bold">Onze diensten</h2>
+        </div>
+        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
+          <div className="bg-white p-8 rounded-xl shadow text-center border">
+            <div className="flex justify-center mb-4"><Building2 className="w-10 h-10 text-[#0e141e]" /></div>
+            <h3 className="font-semibold text-lg mb-2">Gebouwautomatisering</h3>
+            <p className="text-sm text-gray-600">Verlichting, zonwering, klimaatcontrole, aanwezigheidssensoren en meer.</p>
+          </div>
+          <div className="bg-white p-8 rounded-xl shadow text-center border">
+            <div className="flex justify-center mb-4"><Zap className="w-10 h-10 text-[#0e141e]" /></div>
+            <h3 className="font-semibold text-lg mb-2">Energiebeheer</h3>
+            <p className="text-sm text-gray-600">Slimme meters en optimalisatie van energieverbruik via monitoring en sturing.</p>
+          </div>
+          <div className="bg-white p-8 rounded-xl shadow text-center border">
+            <div className="flex justify-center mb-4">
+              <img src="/loxone-logo.png" alt="Loxone" className="h-20 mx-auto mb-4 pt-1" />
+            </div>
+            <h3 className="font-semibold text-lg mb-2">Loxone partner</h3>
+            <p className="text-sm text-gray-600">Integraties en maatwerkoplossingen met Loxone-systemen.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="over" className="bg-[#0e141e] text-white py-20 px-4">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+          <img src="/images/installatie-endy.png" alt="Installatie door Endy" className="rounded-xl shadow" />
+          <div>
+            <h2 className="text-3xl font-bold mb-4">Over ons</h2>
+            <p className="text-white/80 text-lg">Van advies tot realisatie: wij bieden innovatieve oplossingen voor slimmer en duurzamer gebouwbeheer.</p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
