@@ -41,10 +41,7 @@ export default function Realisaties() {
       <main className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">Onze Realisaties</h2>
-          <div className="flex justify-center mb-12">
-            <img src="/images/installatie-endy.png" alt="Installatie door Endy" className="rounded-xl shadow-lg max-h-[600px] w-auto" />
-          </div>
-          <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {projecten.map((project, index) => (
               <div key={index} className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white text-black">
                 <img src={project.src} alt={project.title} className="w-full h-64 object-cover" />
