@@ -13,7 +13,7 @@ export default function Homepage() {
         <nav className="space-x-6 text-sm text-white/80">
           <a href="#diensten">Diensten</a>
           <a href="#over">Over ons</a>
-          <a href="#projecten">Projecten</a>
+          <a href="/realisaties">Projecten</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
