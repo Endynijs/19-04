@@ -74,6 +74,7 @@ export default function Homepage() {
       {/* Over ons */}
       <section id="over" className="bg-[#0e141e] text-white py-20 px-4">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+          <img src="/images/installatie-endy.png" alt="Installatie door Endy" className="rounded-xl shadow" />
           <div>
             <h2 className="text-3xl font-bold mb-4">Over ons</h2>
             <p className="text-white/80 text-lg">Van advies tot realisatie: wij bieden innovatieve oplossingen voor slimmer en duurzamer gebouwbeheer.</p>
