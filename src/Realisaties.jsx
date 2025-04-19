@@ -16,10 +16,10 @@ export default function Realisaties() {
     <div className="bg-[#0e141e] text-white font-sans min-h-screen">
       {/* Header */}
       <header className="flex justify-between items-center p-6 max-w-7xl mx-auto">
-        <div className="h-20 pr-4">
-          <img src="/images/nijs-logo.png" alt="Nijs Solutions Group" className="h-full object-contain" />
+        <div className="h-40 pr-4">
+          <img src="/images/nijs-logo.png" alt="Nijs Solutions Group" className="h-full w-auto object-contain" />
         </div>
-        <nav className="space-x-6 text-sm text-white/80">
+        <nav className="space-x-6 text-lg text-white/80">
           <a href="/">Home</a>
           <a href="/realisaties">Realisaties</a>
           <a href="#contact">Contact</a>
