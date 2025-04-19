@@ -1,7 +1,9 @@
 
-import React from "react";
+import React, { useState } from "react";
+import { Menu } from "lucide-react";
 
 export default function Realisaties() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const projecten = [
     { src: "/images/project1.jpg", title: "Industriële sturingen" },
     { src: "/images/project2.jpg", title: "Thuislaadpunt installatie" },
@@ -15,20 +17,33 @@ export default function Realisaties() {
   return (
     <div className="bg-[#0e141e] text-white font-sans min-h-screen">
       {/* Header */}
-      <header className="flex flex-col md:flex-row justify-between items-center p-6 max-w-7xl mx-auto">
-        <div className="h-80 pr-4 flex-shrink-0">
-          <img src="/images/nijs-logo.png" alt="Nijs Solutions Group" className="h-full w-auto object-contain" />
+      <header className="p-6 max-w-7xl mx-auto">
+        <div className="flex justify-between items-center">
+          <img src="/images/nijs-logo.png" alt="Nijs Solutions Group" className="h-20 w-auto object-contain" />
+          <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
+            <Menu className="h-6 w-6 text-white" />
+          </button>
+          <nav className="hidden md:flex space-x-6 text-base text-white/80">
+            <a href="/">Home</a>
+            <a href="/realisaties">Realisaties</a>
+            <a href="#contact">Contact</a>
+          </nav>
         </div>
-        <nav className="space-x-6 text-lg text-white/80 mt-6 md:mt-0">
-          <a href="/">Home</a>
-          <a href="/realisaties">Realisaties</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        {menuOpen && (
+          <nav className="flex flex-col mt-4 space-y-2 text-white/80 md:hidden">
+            <a href="/">Home</a>
+            <a href="/realisaties">Realisaties</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        )}
       </header>
 
       <main className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">Onze Realisaties</h2>
+          <div className="flex justify-center mb-12">
+            <img src="/images/installatie-endy.png" alt="Installatie door Endy" className="rounded-xl shadow-lg max-h-[600px] w-auto" />
+          </div>
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {projecten.map((project, index) => (
               <div key={index} className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white text-black">
