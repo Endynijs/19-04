@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Menu } from "lucide-react";
 
@@ -7,7 +6,7 @@ export default function Realisaties() {
   const projecten = [
     { src: "/images/project1.jpg", title: "Industriële sturingen" },
     { src: "/images/project2.jpg", title: "Thuislaadpunt installatie" },
-    { src: "/images/project3.jpg", title: "Compleet energy management systeem en zonnepanelen" },
+    { src: "/images/project3.jpg", title: "Zonnepanelen bij bedrijfsgebouw" },
     { src: "/images/project4.jpg", title: "Slimme energiesturing" },
     { src: "/images/project5.jpg", title: "Herstelling Alfen laadpunt" },
     { src: "/images/project6.jpg", title: "Commerciële laadpleinen" },
@@ -24,16 +23,16 @@ export default function Realisaties() {
             <Menu className="h-6 w-6 text-white" />
           </button>
           <nav className="hidden md:flex space-x-6 text-base text-white/80">
-            <a href="/">Home</a>
-            <a href="/realisaties">Realisaties</a>
-            <a href="#contact">Contact</a>
+            <a href="/" className="border border-white/50 px-4 py-2 rounded-xl hover:bg-white hover:text-[#0e141e] transition-colors duration-200">Home</a>
+            <a href="/realisaties" className="border border-white/50 px-4 py-2 rounded-xl hover:bg-white hover:text-[#0e141e] transition-colors duration-200">Realisaties</a>
+            <a href="#contact" className="border border-white/50 px-4 py-2 rounded-xl hover:bg-white hover:text-[#0e141e] transition-colors duration-200">Contact</a>
           </nav>
         </div>
         {menuOpen && (
           <nav className="flex flex-col mt-4 space-y-2 text-white/80 md:hidden">
-            <a href="/">Home</a>
-            <a href="/realisaties">Realisaties</a>
-            <a href="#contact">Contact</a>
+            <a href="/" className="border border-white/50 px-4 py-2 rounded-xl hover:bg-white hover:text-[#0e141e] transition-colors duration-200">Home</a>
+            <a href="/realisaties" className="border border-white/50 px-4 py-2 rounded-xl hover:bg-white hover:text-[#0e141e] transition-colors duration-200">Realisaties</a>
+            <a href="#contact" className="border border-white/50 px-4 py-2 rounded-xl hover:bg-white hover:text-[#0e141e] transition-colors duration-200">Contact</a>
           </nav>
         )}
       </header>
