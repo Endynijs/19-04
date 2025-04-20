@@ -7,7 +7,7 @@ export default function Realisaties() {
   const projecten = [
     { src: "/images/project1.jpg", title: "Industriële sturingen" },
     { src: "/images/project2.jpg", title: "Thuislaadpunt installatie" },
-    { src: "/images/project3.jpg", title: "Zonnepanelen bij bedrijfsgebouw" },
+    { src: "/images/project3.jpg", title: "Compleet energy management systeem en zonnepanelen" },
     { src: "/images/project4.jpg", title: "Slimme energiesturing" },
     { src: "/images/project5.jpg", title: "Herstelling Alfen laadpunt" },
     { src: "/images/project6.jpg", title: "Commerciële laadpleinen" },
