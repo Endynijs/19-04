@@ -19,7 +19,7 @@ export default function Realisaties() {
       {/* Header */}
       <header className="p-6 max-w-7xl mx-auto">
         <div className="flex justify-between items-center">
-          <img src="/images/nijs-logo.png" alt="Nijs Solutions Group" className="h-20 w-auto object-contain" />
+          <img src="/images/nijs-logo-cropped.png" alt="Nijs Solutions Group" className="h-16 sm:h-24 w-auto object-contain" />
           <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
             <Menu className="h-6 w-6 text-white" />
           </button>
@@ -41,7 +41,7 @@ export default function Realisaties() {
       <main className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">Onze Realisaties</h2>
-                    <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {projecten.map((project, index) => (
               <div key={index} className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white text-black">
                 <img src={project.src} alt={project.title} className="w-full h-64 object-cover" />
