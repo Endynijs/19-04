@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Button } from "./components/ui/button";
 import { Input } from "./components/ui/input";
@@ -11,7 +12,11 @@ export default function Homepage() {
       {/* Header */}
       <header className="p-4 sm:p-6 max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row justify-between sm:items-center items-start gap-4 sm:gap-8">
-          <img src="/images/nijs-logo.png" alt="Nijs Solutions Group" className="h-28 sm:h-48 w-auto object-contain" />
+          <img
+            src="/images/nijs-logo-cropped.png"
+            alt="Nijs Solutions Group"
+            className="h-16 sm:h-24 w-auto object-contain"
+          />
           <div className="w-full flex justify-end sm:hidden">
             <button onClick={() => setMenuOpen(!menuOpen)}>
               <Menu className="h-6 w-6 text-white" />
