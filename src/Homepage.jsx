@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "./components/ui/button";
 import { Input } from "./components/ui/input";
@@ -23,18 +22,18 @@ export default function Homepage() {
             </button>
           </div>
           <nav className="hidden sm:flex space-x-6 text-base text-white/80">
-            <a href="#diensten">Diensten</a>
-            <a href="#over">Over ons</a>
-            <a href="/realisaties">Realisaties</a>
-            <a href="#contact">Contact</a>
+            <a href="#diensten" className="border border-white/50 px-4 py-2 rounded-xl hover:bg-white hover:text-[#0e141e] transition-colors duration-200">Diensten</a>
+            <a href="#over" className="border border-white/50 px-4 py-2 rounded-xl hover:bg-white hover:text-[#0e141e] transition-colors duration-200">Over ons</a>
+            <a href="/realisaties" className="border border-white/50 px-4 py-2 rounded-xl hover:bg-white hover:text-[#0e141e] transition-colors duration-200">Realisaties</a>
+            <a href="#contact" className="border border-white/50 px-4 py-2 rounded-xl hover:bg-white hover:text-[#0e141e] transition-colors duration-200">Contact</a>
           </nav>
         </div>
         {menuOpen && (
           <nav className="flex flex-col mt-4 space-y-2 text-white/80 sm:hidden text-center">
-            <a href="#diensten">Diensten</a>
-            <a href="#over">Over ons</a>
-            <a href="/realisaties">Realisaties</a>
-            <a href="#contact">Contact</a>
+            <a href="#diensten" className="border border-white/50 px-4 py-2 rounded-xl hover:bg-white hover:text-[#0e141e] transition-colors duration-200">Diensten</a>
+            <a href="#over" className="border border-white/50 px-4 py-2 rounded-xl hover:bg-white hover:text-[#0e141e] transition-colors duration-200">Over ons</a>
+            <a href="/realisaties" className="border border-white/50 px-4 py-2 rounded-xl hover:bg-white hover:text-[#0e141e] transition-colors duration-200">Realisaties</a>
+            <a href="#contact" className="border border-white/50 px-4 py-2 rounded-xl hover:bg-white hover:text-[#0e141e] transition-colors duration-200">Contact</a>
           </nav>
         )}
       </header>
