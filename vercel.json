@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/sitemap.xml",
-      "destination": "/sitemap.xml"
+      "source": "/nijs-sitemap.xml",
+      "destination": "/nijs-sitemap.xml"
     },
     {
       "source": "/robots.txt",
