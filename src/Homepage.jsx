@@ -92,11 +92,11 @@ export default function Homepage() {
     <p className="text-gray-700 mb-6">
       Stuur ons een bericht of vraag vrijblijvend informatie aan.
     </p>
-    <form className="grid gap-4 max-w-xl mx-auto">
-      <Input type="text" placeholder="Naam" />
-      <Input type="email" placeholder="E-mailadres" />
-      <textarea className="p-3 rounded-lg border border-gray-300" rows="4" placeholder="Bericht" />
-      <Button className="bg-[#0e141e] text-white hover:bg-[#1c2433]">Verstuur</Button>
+    <form className="grid gap-4 max-w-xl mx-auto" action="https://formspree.io/f/xyzeajwl" method="POST">
+      <input type="text" name="naam" placeholder="Naam" className="p-3 rounded-lg border border-gray-300" required />
+      <input type="email" name="email" placeholder="E-mailadres" className="p-3 rounded-lg border border-gray-300" required />
+      <textarea name="bericht" className="p-3 rounded-lg border border-gray-300" rows="4" placeholder="Bericht" required></textarea>
+      <button type="submit" className="bg-[#0e141e] text-white px-6 py-3 rounded-xl hover:bg-[#1c2433]">Verstuur</button>
     </form>
   </div>
 </section>
