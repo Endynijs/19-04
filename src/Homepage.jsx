@@ -85,6 +85,21 @@ export default function Homepage() {
           </div>
         </div>
       </section>
-    </div>
+    
+<section id="contact" className="py-20 bg-white text-black">
+  <div className="max-w-4xl mx-auto px-4 text-center">
+    <h2 className="text-3xl font-bold mb-4">Neem contact op</h2>
+    <p className="text-gray-700 mb-6">
+      Stuur ons een bericht of vraag vrijblijvend informatie aan.
+    </p>
+    <form className="grid gap-4 max-w-xl mx-auto">
+      <Input type="text" placeholder="Naam" />
+      <Input type="email" placeholder="E-mailadres" />
+      <textarea className="p-3 rounded-lg border border-gray-300" rows="4" placeholder="Bericht" />
+      <Button className="bg-[#0e141e] text-white hover:bg-[#1c2433]">Verstuur</Button>
+    </form>
+  </div>
+</section>
+</div>
   );
 }
