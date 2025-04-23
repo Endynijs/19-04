@@ -93,6 +93,7 @@ export default function Homepage() {
       Stuur ons een bericht of vraag vrijblijvend informatie aan.
     </p>
     <form className="grid gap-4 max-w-xl mx-auto" action="https://formspree.io/f/xyzeajwl" method="POST">
+      <input type="hidden" name="_next" value="https://www.nijs.tech/bedankt" />
       <input type="text" name="naam" placeholder="Naam" className="p-3 rounded-lg border border-gray-300" required />
       <input type="email" name="email" placeholder="E-mailadres" className="p-3 rounded-lg border border-gray-300" required />
       <textarea name="bericht" className="p-3 rounded-lg border border-gray-300" rows="4" placeholder="Bericht" required></textarea>
